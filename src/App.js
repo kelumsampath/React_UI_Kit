@@ -8,6 +8,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import PaginationHome from './components/pagination_kit/index'
 
 export default function  App() {
   return (
@@ -19,7 +20,7 @@ export default function  App() {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link to="/about">Pagination</Link>
             </li>
             <li>
               <Link to="/users">Users</Link>
@@ -50,7 +51,7 @@ function Home() {
 }
 
 function About() {
-  return <h2>About</h2>;
+  return <PaginationHome></PaginationHome>;
 }
 
 function Users() {
